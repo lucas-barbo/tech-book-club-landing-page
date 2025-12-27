@@ -14,4 +14,28 @@
 
    --font-family: 'Martian Mono', monospace;
    --font-family-secundary: 'Inter', system-ui, sans-serif;
+
+   --spacing-2: 2px;
+   --spacing-4: 4px;
+   --spacing-6: 6px;
+   --spacing-8: 8px;
+   --spacing-12: 12px;
+   --spacing-16: 16px;
+   --spacing-20: 20px;
+   --spacing-24: 24px;
+   --spacing-32: 32px;
+   --spacing-40: 40px;
+   --spacing-48: 48px;
+   --spacing-64: 64px;
+   --spacing-80: 80px;
+
+   --radius-4: 4px;
+   --radius-6: 6px;
+   --radius-8: 8px;
+   --radius-10: 10px;
+   --radius-12: 12px;
+   --radius-16: 16px;
+   --radius-20: 20px;
+   --radius-24: 24px;
+   --radius-full: 999px;
 } 
