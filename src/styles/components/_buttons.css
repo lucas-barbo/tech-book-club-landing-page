@@ -1,0 +1,25 @@
+.button-primary {
+   border-color: var(--neutral-900);
+   color: var(--neutral-900);
+   background-color: var(--light-salmon-50);
+}
+
+.button-alternate {
+   border-color: var(--neutral-000);
+   color: var(--neutral-000);
+}
+
+.button-primary:hover,
+.button-alternate:hover {
+   background: var(--gradient);
+}
+
+.button-primary:focus {
+   box-shadow: 0px 0px 0px 3px #FFFFFF, 0px 0px 0px 5px #385159;
+   background: var(--gradient);
+}
+
+.button-alternate:focus {
+   box-shadow: 0px 0px 0px 3px #062630, 0px 0px 0px 5px #E6E1DF;
+   background: var(--gradient);
+}
