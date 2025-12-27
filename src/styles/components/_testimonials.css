@@ -1,0 +1,16 @@
+.testimonials {
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-12);
+   color: var(--neutral-700);
+}
+
+.testimonials__stars {
+   width: 24px;
+   height: 24px;
+}
+
+.testimonials__img {
+   width: auto;
+   height: 40px;
+}

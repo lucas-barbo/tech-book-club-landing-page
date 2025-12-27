@@ -23,11 +23,7 @@ button {
    border: solid 2px;
    border-radius: var(--radius-8);
 
-   font-family: var(--font-family);
-   font-size: 1rem;
-   font-weight: 600;
    text-transform: uppercase;
-   letter-spacing: -1px;
    
    background-color: transparent;
 }
