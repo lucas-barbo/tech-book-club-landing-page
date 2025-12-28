@@ -1,0 +1,13 @@
+.list__item {
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-14);
+
+   & img {
+      width: 28px;
+      height: 28px;
+
+      border-radius: var(--radius-4);
+      border: solid 2px var(--neutral-700);
+   }
+}

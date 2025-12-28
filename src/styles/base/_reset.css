@@ -8,6 +8,7 @@
 
 html {
    scroll-behavior: smooth;
+   color: var(--neutral-700);
 }
 
 body {
@@ -28,4 +29,13 @@ button {
    text-transform: uppercase;
    
    background-color: transparent;
+}
+
+ul, ol {
+   list-style: none;
+}
+
+img {
+   width: 100%;
+   height: auto;
 }

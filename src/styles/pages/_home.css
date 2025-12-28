@@ -57,11 +57,6 @@
    gap: var(--spacing-20);
 }
 
-.header__img {
-   width: 100%;
-   height: auto;
-}
-
 .header__glow {
    position: absolute;
    bottom: -200px;
@@ -70,6 +65,30 @@
 
    width: 684px;
    height: 684px;
+}
+
+.benefits {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-40);
+
+   padding-block: var(--spacing-64);
+}
+
+.benefits__title {
+   color: var(--neutral-900);
+}
+
+.benefits__box-list {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-24);
+}
+
+.benefits__list {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-16);
 }
 
 @media (width >= 704px) {
