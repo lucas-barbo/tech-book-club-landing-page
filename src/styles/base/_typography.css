@@ -4,6 +4,7 @@
    font-weight: 800;
    line-height: 1.2;
    letter-spacing: -2px;
+   color: var(--neutral-900);
 }
 
 .text-preset-2 {
@@ -12,6 +13,7 @@
    font-weight: 600;
    line-height: 1.3;
    letter-spacing: -2px;
+   color: var(--neutral-900);
 }
 
 .text-preset-3 {
@@ -72,34 +74,19 @@
 
 @media (width >= 704px) {
    .text-preset-1 {
-      font-family: var(--font-family);
       font-size: 3.875rem;
-      font-weight: 800;
-      line-height: 1.2; 
-      letter-spacing: -2px;
    }
 
    .text-preset-2 {
-      font-family: var(--font-family);
       font-size: 3.125rem;
-      font-weight: 600;
-      line-height: 1.3;
-      letter-spacing: -2px;
    }
 
    .text-preset-3 {
-      font-family: var(--font-family);
       font-size: 2.125rem;
-      font-weight: 600;
       line-height: 1.3;
-      letter-spacing: -1px;
    }
 
    .text-preset-6 {
-      font-family: var(--font-family);
       font-size: 1.125rem;
-      font-weight: 600;
-      line-height: 1.3;
-      letter-spacing: -1px;
    }
 }

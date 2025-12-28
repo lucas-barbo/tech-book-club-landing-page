@@ -31,12 +31,12 @@ button {
    background-color: transparent;
 }
 
-ul, ol {
-   list-style: none;
+figure {
+   width: 100%;
 }
 
-figure {
-   width: fit-content;
+ul, ol {
+   list-style: none;
 }
 
 img {

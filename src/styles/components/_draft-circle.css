@@ -1,0 +1,19 @@
+.draft-circle {
+   position: relative;
+   display: inline-block;
+}
+
+.draft-circle::after {
+   content: "";
+   position: absolute;
+   
+   top: -10%;
+   right: -10%;
+   left: -10%;
+   bottom: -10%;
+
+   background-image: url("../../assets/icons/circle.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}

@@ -94,6 +94,24 @@
    gap: var(--spacing-16);
 }
 
+.what {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: var(--spacing-40);
+}
+
+.what__description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: var(--spacing-24);
+}
+
+.what__technologies {
+   display: none;
+}
+
 @media (width >= 704px) {
    .header {
       gap: var(--spacing-64);
@@ -129,6 +147,10 @@
       width: 50%;
    }
 
+   .header__img {
+      width: 50%;
+   }
+
    .benefits {
       flex-direction: row;
       gap: var(--spacing-80);
@@ -146,5 +168,30 @@
 
    .benefits__img {
       width: 50%;
+   }
+
+   .what {
+      flex-direction: row;
+      gap: var(--spacing-80);
+   }
+
+   .what__description {
+      width: 50%;
+   }
+
+   .what__img {
+      position: relative;
+      width: 50%;
+   }
+
+   .what__technologies {
+      position: absolute;
+      left: -80px;
+      bottom: 31px;
+
+      display: initial;
+
+      width: auto;
+      height: 138px;
    }
 }
