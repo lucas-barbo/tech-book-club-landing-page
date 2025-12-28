@@ -35,6 +35,10 @@ ul, ol {
    list-style: none;
 }
 
+figure {
+   width: fit-content;
+}
+
 img {
    width: 100%;
    height: auto;

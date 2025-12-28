@@ -69,6 +69,7 @@
 
 .benefits {
    display: flex;
+   align-items: center;
    flex-direction: column;
    gap: var(--spacing-40);
 
@@ -83,6 +84,8 @@
    display: flex;
    flex-direction: column;
    gap: var(--spacing-24);
+
+   width: 100%;
 }
 
 .benefits__list {
@@ -96,6 +99,18 @@
       gap: var(--spacing-64);
       padding-top: 32px;
       padding-bottom: 80px;
+   }
+
+   .benefits {
+      padding-block: var(--spacing-80);
+   }
+
+   .benefits__box-list {
+      gap: var(--spacing-34);
+   }
+
+   .benefits__list {
+      gap: var(--spacing-24);
    }
 }
 
@@ -111,6 +126,25 @@
    }
 
    .header__text {
+      width: 50%;
+   }
+
+   .benefits {
+      flex-direction: row;
+      gap: var(--spacing-80);
+      padding-block: var(--spacing-120);
+   }
+
+   .benefits__box-list {
+      order: 2;
+      width: 50%;
+   }
+
+   .benefits__list {
+      width: 431px;
+   }
+
+   .benefits__img {
       width: 50%;
    }
 }

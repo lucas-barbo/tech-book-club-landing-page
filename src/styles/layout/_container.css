@@ -1,5 +1,11 @@
 .container {
-   max-width: 1202px;
-   padding-inline: 16px;
+   max-width: 1234px;
+   padding-inline: var(--spacing-16);
    margin: auto;
+}
+
+@media (width >= 704px) {
+   .container {
+      padding-inline: var(--spacing-32);
+   }
 }
