@@ -99,6 +99,8 @@
    flex-direction: column;
    align-items: center;
    gap: var(--spacing-40);
+
+   padding-bottom: var(--spacing-64);
 }
 
 .what__description {
@@ -110,6 +112,51 @@
 
 .what__technologies {
    display: none;
+}
+
+.steps {
+   position: relative;
+   overflow: hidden;
+
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-32);
+
+   padding: var(--spacing-64) var(--spacing-16);
+   border-radius: var(--radius-12);
+
+   background-color: var(--neutral-100);
+   background-image: url("../../assets/patterns/pattern-light.png");
+}
+
+.steps__list {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-32);
+}
+
+.steps__item {
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--spacing-20);
+
+   color: var(--neutral-900);
+}
+
+.steps__arrow {
+   display: none;
+}
+
+.steps__glow {
+   position: absolute;
+   right: -340px;
+   bottom: -300px;
+
+   width: 684px;
+   height: 684px;
 }
 
 @media (width >= 704px) {
@@ -129,6 +176,28 @@
 
    .benefits__list {
       gap: var(--spacing-24);
+   }
+
+   .what {
+      padding-bottom: var(--spacing-80);
+   }
+
+   .steps {
+      gap: var(--spacing-48);
+      padding: var(--spacing-80) var(--spacing-32); 
+   }
+
+   .steps__list {
+      gap: var(--spacing-40);
+   }
+
+   .steps__item {
+      gap: var(--spacing-24);
+   }
+
+   .steps__glow {
+      right: -40%;
+      bottom: -40%;
    }
 }
 
@@ -173,6 +242,8 @@
    .what {
       flex-direction: row;
       gap: var(--spacing-80);
+
+      padding-bottom: var(--spacing-120);
    }
 
    .what__description {
@@ -193,5 +264,32 @@
 
       width: auto;
       height: 138px;
+   }
+
+   .steps {
+      gap: var(--spacing-64);
+      padding: var(--spacing-80) var(--spacing-60); 
+   }
+
+   .steps__title {
+      text-align: center;
+   }
+
+   .steps__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--spacing-48);
+   }
+
+   .steps__list .steps__arrow {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: initial;
+
+      width: auto;
+      height: auto;
+      border: none;
    }
 }

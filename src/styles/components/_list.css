@@ -10,4 +10,20 @@
       border-radius: var(--radius-4);
       border: solid 2px var(--neutral-700);
    }
+
+   & .step__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 32px;
+      height: 32px;
+
+      border-radius: var(--radius-4);
+      border: solid 2px var(--neutral-900);
+
+      color: var(--neutral-900);
+      letter-spacing: 0;
+      line-height: 0;
+   }
 }
