@@ -19,6 +19,8 @@ button {
    align-items: center;
    gap: 1rem;
 
+   width: fit-content;
+
    padding: 20px 24px;
    border: solid 2px;
    border-radius: var(--radius-8);
