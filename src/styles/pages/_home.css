@@ -159,6 +159,86 @@
    height: 684px;
 }
 
+.prices {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-24);
+
+   padding-block: var(--spacing-64);
+}
+
+.prices__cards {
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   align-items: baseline;
+   gap: var(--spacing-24);
+}
+
+.prices__card {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-32);
+
+   height: fit-content;
+
+   padding: var(--spacing-24);
+   border: solid 1px var(--neutral-200);
+   border-radius: var(--radius-8);
+}
+
+.prices__card:nth-child(2) {
+   position: relative;
+   overflow: hidden;
+
+   background-color: var(--neutral-100);
+}
+
+.prices__glow {
+   position: absolute;
+   right: -340px;
+   bottom: -440px;
+   z-index: 0;
+
+   width: 684px;
+   height: 684px;
+}
+
+.prices__box {
+   z-index: 1;
+
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-24);
+}
+
+.prices__price {
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-8);
+
+   & strong {
+      font-size: 34px;
+   }
+}
+
+.prices__line {
+   width: 100%;
+   height: 1px;
+   background-color: var(--neutral-200);
+}
+
+.prices__list {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-16);
+}
+
+.prices__button {
+   z-index: 1;
+
+   width: 100%;
+}
+
 @media (width >= 704px) {
    .header {
       gap: var(--spacing-64);
@@ -182,6 +262,21 @@
       padding-bottom: var(--spacing-80);
    }
 
+   .what__img {
+      position: relative;
+   }
+
+   .what__technologies {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+
+      display: initial;
+
+      width: auto;
+      height: 138px;
+   }
+
    .steps {
       gap: var(--spacing-48);
       padding: var(--spacing-80) var(--spacing-32); 
@@ -198,6 +293,17 @@
    .steps__glow {
       right: -40%;
       bottom: -40%;
+   }
+
+   .prices {
+      gap: var(--spacing-40);
+      padding-block: var(--spacing-80);
+   }
+
+   .prices__cards {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-24);
    }
 }
 
@@ -251,19 +357,13 @@
    }
 
    .what__img {
-      position: relative;
       width: 50%;
    }
 
    .what__technologies {
-      position: absolute;
       left: -80px;
       bottom: 31px;
-
-      display: initial;
-
-      width: auto;
-      height: 138px;
+      right: auto;
    }
 
    .steps {
@@ -291,5 +391,23 @@
       width: auto;
       height: auto;
       border: none;
+   }
+
+   .prices {
+      gap: var(--spacing-64);
+      padding-block: var(--spacing-120);
+   }
+
+   .prices__title {
+      text-align: center;
+   }
+
+   .prices__cards {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-24);
+   }
+
+   .prices__card:nth-child(2) {
+      padding-block: var(--spacing-40);
    }
 }

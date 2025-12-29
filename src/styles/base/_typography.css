@@ -22,6 +22,7 @@
    font-weight: 600;
    line-height: 1.1;
    letter-spacing: -1px;
+   color: var(--neutral-900);
 }
 
 .text-preset-4 {
@@ -30,6 +31,7 @@
    font-weight: 600;
    line-height: 1.1;
    letter-spacing: -1px;
+   color: var(--neutral-900);
 }
 
 .text-preset-4--regular {
