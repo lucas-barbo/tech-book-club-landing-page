@@ -164,6 +164,7 @@
    flex-direction: column;
    gap: var(--spacing-24);
 
+   max-width: 970px;
    padding-block: var(--spacing-64);
 }
 
@@ -239,6 +240,21 @@
    width: 100%;
 }
 
+.comment {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: var(--spacing-32);
+   column-gap: var(--spacing-6);
+
+   max-width: 970px;
+   padding-bottom: var(--spacing-64);
+
+   & .testimonials__stars {
+      width: 28px;
+      height: auto;
+   }
+}
+
 @media (width >= 704px) {
    .header {
       gap: var(--spacing-64);
@@ -304,6 +320,10 @@
       grid-template-rows: auto;
       grid-template-columns: repeat(2, 1fr);
       gap: var(--spacing-24);
+   }
+
+   .comment {
+      padding-bottom: var(--spacing-80);
    }
 }
 
@@ -396,6 +416,7 @@
    .prices {
       gap: var(--spacing-64);
       padding-block: var(--spacing-120);
+      padding-inline: 0;
    }
 
    .prices__title {
@@ -409,5 +430,15 @@
 
    .prices__card:nth-child(2) {
       padding-block: var(--spacing-40);
+   }
+
+   .comment {
+      justify-content: center;
+      padding-bottom: var(--spacing-120);
+      padding-inline: 0;
+
+      & h2 {
+         text-align: center;
+      }
    }
 }
